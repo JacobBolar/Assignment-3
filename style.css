@@ -81,3 +81,12 @@ ingreTitle{
   font-family: Arial, Helvetica, sans-serif-serif;
   font-style: italic;
 }
+
+th {
+  border: 1px solid black;
+  background: white;
+}
+
+td{
+  border: 1px solid black;
+}
