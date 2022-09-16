@@ -1,0 +1,74 @@
+body{
+    background-color: lightgreen;
+  }
+  h1{
+    color: black;
+    text-align: center;
+  }
+  p{
+    font-family: Times 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+  }
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+    'header header header'
+    'nav main main'
+    'footer footer footer';
+    gap: 10px;
+}
+
+.grid-container > * {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+ header{
+  grid-area: header;
+  background-color: grey;
+}
+
+ headerText{
+  grid-area: headerText;
+  background-color: grey;
+}
+
+ nav{
+  grid-area: nav;
+  background-color: grey;
+}
+
+ main{
+  grid-area: main;
+  background-color: grey;
+}
+
+ footer{
+  grid-area: footer;
+  background-color: grey;
+}
+
+a:hover{
+    background-color: yellow;
+    
+}
+
+#meat{
+  background-color: lightcoral;
+}
+
+#veggies{
+  background-color: lightgreen;
+}
+
+#dairy{
+  background-color: lightyellow;
+}
+
+ingreTitle{
+  font-family: Arial, Helvetica, sans-serif-serif;
+  font-style: italic;
+}
