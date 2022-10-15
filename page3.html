@@ -1,0 +1,70 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset = "utf-8">
+      <meta name = "viewport" content = "width = device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <title>***TITLE***</title>
+    </head>
+
+    <body>
+      <div class = "grid-container">
+      <header class = "headerText">
+        <h1>Assignment 2 Page 3 </h1>
+      </header>
+        
+      <header class = "headerImage">
+        <img src = "Images/headerImage.jpg" height = "180px" width = "500px">
+      </header>
+        
+      </header>
+
+      <nav class = "navigation">
+        <h2>Links to Pages</h2>
+        <ul>
+          <li><a href = "index.html">Index</a></li>
+          <li><a href = "page1.html">Page 1</a></li>
+          <li><a href = "page2.html">Page 2</a></li>
+          <li><a href = "page3.html">Page 3</a></li>
+          <li><a href = "https://columbusstate.edu/">Columbus State University</a></li>
+        </ul>
+      </nav>
+      
+      <main class = "main">
+        <p>********Please fill out the form below to test filling out forms for me!******** </p>
+      <form action ="https://webdevbasics.net/scripts/yoga.php" method="post" >
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id ="lname" name="lname" maxlength="50" ><br>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id ="fname" name="fname" maxlength="50" ><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id ="email" name="email" ><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="number" id ="dob" name="dob" min="1900" max="2022" ><br>
+        
+        <label for="uname">UserName:</label><br>
+        <input type="text" id ="uname" name="uname" maxlength="10" minlength="5" onkeyup="userCheck();" required><br>
+
+        <label for="pwd">Password:<br>
+        <input type="password" id ="pwd" name="pwd" minlength="8" onkeyup="pwcheck();" required><br></label>
+    
+        <label for="pwd">Repeat Password:<br>
+        <input type="password" id ="cpwd" name="cpwd" onkeyup="pwcheck();" required><br></label>
+        
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id ="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="###-###-####" ><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+      
+      </div>
+      <script src="script.js"></script>
+    </body>
+
+  </html>
