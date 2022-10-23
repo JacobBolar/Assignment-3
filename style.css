@@ -16,11 +16,27 @@ pf{
     font-size: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .grid-container{
+  display: grid;
+  grid-template-areas: 
+    'headerText'
+    'nav'
+    'main'
+    'aside'
+    'footer footer footer';
+    gap: 10px;
+}
+}
+
 .grid-container{
   display: grid;
   grid-template-areas: 
     'headerImage headerImage headerText'
-    'nav main main'
+    'nav main aside'
     'footer footer footer';
     gap: 10px;
 }
@@ -47,6 +63,11 @@ pf{
 
  nav{
   grid-area: nav;
+  background-color: grey;
+}
+
+aside{
+  grid-area: aside;
   background-color: grey;
 }
 
@@ -96,5 +117,5 @@ ul{
 }
 
 .alternate{
-  background: white;
+  background: #ffaaff;
 }
